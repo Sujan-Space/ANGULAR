@@ -1,0 +1,10 @@
+<h2>Custom Currency Pipe (mycurrency)</h2>
+
+<ul>
+  <li *ngFor="let amount of balances">
+    Default (₹): {{ amount | mycurrency }} <br>
+    Dollar ($): {{ amount | mycurrency:'$' }} <br>
+    Euro (€): {{ amount | mycurrency:'€' }}
+    <hr>
+  </li>
+</ul>
