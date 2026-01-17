@@ -1,0 +1,91 @@
+/* Main card */
+.main-card {
+  width: 380px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+/* Input row */
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2e7d32;
+}
+
+/* Button */
+button {
+  padding: 8px 14px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #256428;
+}
+
+/* Food container (column layout) */
+.food-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual food card */
+.food-card {
+  padding: 10px 14px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

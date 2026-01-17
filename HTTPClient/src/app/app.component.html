@@ -1,0 +1,15 @@
+<h2>Insurance Policies</h2>
+
+<ul *ngIf="policies$ | async as policies; else errorBlock">
+  <li *ngFor="let policy of policies">
+    <strong>
+      Policy ID: {{ policy.id }} <br />
+      Customer Name: {{ policy.name }} <br />
+      Email: {{ policy.email }}
+    </strong>
+  </li>
+</ul>
+
+<ng-template #errorBlock>
+  <p>Failed to load policies</p>
+</ng-template>
