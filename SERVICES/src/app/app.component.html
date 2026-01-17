@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Bank Balances</h2>
+
+  <button (click)="loadBalance()">Get Balance</button>
+
+  <ul>
+    <li *ngFor="let amount of balances">
+      {{ amount }}
+    </li>
+  </ul>
+</div>
